@@ -17,7 +17,9 @@
 
 <body>
     <header class="header">
-        <nav class="navigation">
+        <div class="container">
+            <div class="main">
+                <nav class="navig">
             <a href="" lang="en" class="header-logo">Web<span class="header-logo-accent">Studio</span></a>
             <ul class="header-list">
                 <li class="header-item"><a href="./index.html" class="header-link">Студия</a></li>
@@ -25,15 +27,19 @@
                 <li class="header-item"><a href="" class="header-link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list adress">
             <li class="header-item"><a href="mailto:info@devstudio.com" class="header-link-email">info@devstudio.com</a></li>
             <li class="heder-item"><a href="tel:+380961111111" class="header-link-tel">+38 096 111 11 11</a></li>
         </ul>
+            </div>
+        </div>
     </header>
     
     <main>
-        <section class="filtr">
-            <h1 class="visually-hidden">Портфолио</h1>
+        
+        <section class="portfolio">
+            <div class="container">
+            <h1 class="visually-hidden">Фильтр</h1>
             <ul class="filtr-list">
                 <li class="filtr-item"><button type="button" class="filtr-btm">Все</button></li>
                 <li class="filtr-item"><button type="button" class="filtr-btm">Веб-сайты</button></li>
@@ -41,8 +47,12 @@
                 <li class="filtr-item"><button type="button" class="filtr-btm">Дизайн</button></li>
                 <li class="filtr-item"><button type="button" class="filtr-btm">Маркетинг</button></li>
             </ul>
-        </section>
-        <section class="gallery">
+            </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+            <h1 class="visually-hidden">Галерея</h1>
             <ul class="gallery-list">
                 <li class="gallery-item">
                     <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" height="294">
@@ -88,24 +98,30 @@
                     <img src="./images/portfolio9.jpg" alt="Рост" width="370" height="294">
                     <h2 class="gallery-title">Growing Business</h2>
                     <p class="gallery-text">Приложение</p>
-                    
                 </li>
             </ul>
+            </div>
             </section>
+
     </main>
 
     <footer>
-        <a href="" lang="en" class="footer-logo">Web<span class="footer-logo-accent">Studio</span></a>
-        <address>
-            <ul class="footer-list">
-                <li class="footer-item"><a href="https://goo.gl/maps/ytzTi8YxMLyK7yX88" target="_blank"
-                        rel="noopener noreferrer nofollow" class="footer-link-adress">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer-item"><a href="mailto:info@example.com" class="footer-link-email">info@example.com</a>
-                </li>
-                <li class="footer-item"><a href="tel:+380991111111" class="footer-link-tel">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="footer">
+            <div class="container">
+                <a href="" lang="en" class="footer-logo">Web<span class="footer-logo-accent">Studio</span></a>
+                <address>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="https://goo.gl/maps/ytzTi8YxMLyK7yX88" target="_blank"
+                                rel="noopener noreferrer nofollow" class="footer-link-adress">г. Киев, пр-т Леси Украинки,
+                                26</a></li>
+                        <li class="footer-item"><a href="mailto:info@example.com"
+                                class="footer-link-email">info@example.com</a></li>
+                        <li class="footer-item"><a href="tel:+380991111111" class="footer-link-tel">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
 
 </body>
