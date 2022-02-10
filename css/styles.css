@@ -35,6 +35,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -64,8 +66,12 @@ body {
 
 /*----------------HEADER--------------*/
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .header-list li {
@@ -83,7 +89,6 @@ body {
 
 .header-logo-accent {
   color: var(--header-text-color);
-  margin-right: 93px;
 }
 
 .header-logo-accent:hover,
@@ -220,7 +225,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .reasons-item {
@@ -231,7 +235,7 @@ body {
   width: 370px;
 }
 
-.reasons {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -263,14 +267,16 @@ body {
 
 .about {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .about-list {
   display: flex;
   flex-wrap: wrap;
   /*justify-content: space-between;*/
+}
+.name {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .about-item {
@@ -319,6 +325,9 @@ footer {
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+  display: block;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -331,9 +340,11 @@ footer {
   color: white;
 }
 
-.footer-link-adress {
-  margin-top: 20px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
+.footer-link-adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -342,8 +353,6 @@ footer {
 }
 
 .footer-link-email {
-  margin-top: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -352,8 +361,6 @@ footer {
 }
 
 .footer-link-tel {
-  margin-top: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -373,9 +380,7 @@ footer {
 }
 
 /*-------PORTFOLIO-----------*/
-.portfolio {
-  padding-top: 94px;
-}
+
 .filtr-list {
   display: flex;
   flex-wrap: wrap;
@@ -401,9 +406,6 @@ footer {
   background-color: var(--accent-color);
   color: var(--btn-color);
 }
-.gallery {
-  padding-bottom: 94px;
-}
 
 .gallery-list {
   display: flex;
@@ -421,7 +423,16 @@ footer {
   margin-bottom: 0px;
 }
 
+.gallery-desk {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .gallery-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
